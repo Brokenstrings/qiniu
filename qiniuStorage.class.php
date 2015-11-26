@@ -1,4 +1,9 @@
 <?php
+/**
+ * $uploader = new qiniuStorage($config);
+ * $result = $uploader->uploadFile($_FILES,array('path'=>'YOUR DIR')); 普通文件
+ * $result = $uploader->uploadFile($_FILES,array('path'=>'YOUR DIR'),'base'); 二进制
+ * /
 class qiniuStorage{
 	public $RSF_HOST = 'http://rsf.qbox.me';
 	public $RS_HOST = 'http://rs.qbox.me';
